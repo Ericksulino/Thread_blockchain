@@ -6,13 +6,11 @@ def funcao():
     for i in range(N):
         print(i,"Execução")
         
-    time.sleep(1)
-        
 
 
 print("Inicio")
 for i in range(T):
     print(i)
     threading.Thread(target=funcao).start()
-    
+    time.sleep(1)
 print("Fim")
